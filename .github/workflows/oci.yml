@@ -52,5 +52,4 @@ jobs:
           php -f index.php
 
       - name: PHPUnit
-        working-directory: tests
-        run: phpunit --configuration phpunit-autotest.xml --group DB,SLOWDB
+        run: phpunit --configuration tests/phpunit-autotest.xml --group DB,SLOWDB
